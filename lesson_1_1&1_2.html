@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		"use strict";
+
+		//1 задание
+       const loop = (times = 0, callback = null) => {
+            if (!callback) return;
+            for(let i = 0; i < times; i++) {
+                callback();
+            }
+        	return a;    
+        };
+        let a = 2;
+
+        console.log ('1 задание:');
+        console.log (loop (2, () => {a *= 2;}));
+
+
+        //2 задание
+        //прямоугольник
+        const calculateArea = (width, height) => {
+        	let area1 = width*height;
+        	let options = `Ширина: ${width}, высота: ${height}`;
+        	let obj = {
+        		area: area1,
+        		figure: 'Прямоугольник',
+        		input: options
+        	}
+        	return obj;	
+        }
+
+        console.log ('2 задание:');
+        console.log (calculateArea (3, 5)); 
+
+        
+	</script>
+	
+</body>
+</html>
